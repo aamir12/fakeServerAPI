@@ -41,3 +41,8 @@ PATCH //update only single field
       "firstName": "Aamir1"      
  }
 
+
+
+//for authentication
+ https://github.com/techiediaries/fake-api-jwt-json-server
+
