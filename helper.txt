@@ -1,0 +1,43 @@
+//json-server
+https://github.com/typicode/json-server
+//generate fake data
+https://www.mockaroo.com
+
+//API
+http://localhost:3000/companies/1
+http://localhost:3000/companies/2/users
+http://localhost:3000/companies/?name=Microsoft
+http://localhost:3000/companies/?name=Microsoft&name=Apple
+http://localhost:3000/companies/?_page=1&_limit=2
+http://localhost:3000/companies/?_sort=name&_order=asc
+http://localhost:3000/users?age_gte=30
+http://localhost:3000/users?age_gte=30&age_lte=40
+http://localhost:3000/users?q=De
+//child to parent
+http://localhost:3000/users?_expand=company
+
+//parent to child
+http://localhost:3000/companies?_embed=users
+
+$ json-server --watch db.json --port 3004
+$ npm run json:server
+$ npm run json:server:remote
+
+POST
+{
+      
+      "firstName": "Aamir",
+      "lastName": "Khan",
+      "email": "aamir@gmail.com",
+      "age": 27,
+      "companyId": 1
+ }
+
+PUT   (replace entire record) /  DELETE
+http://localhost:3000/users/51
+
+PATCH //update only single field
+{      
+      "firstName": "Aamir1"      
+ }
+
